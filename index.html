@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Физика Премиум — Теория и тесты</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar glass">
+    <div class="brand">
+      <div class="logo-glass" aria-hidden="true"></div>
+      <div class="brand-text">
+        <h1>Физика — Теория и тесты</h1>
+        <p class="subtitle">Учебный курс высокого уровня</p>
+      </div>
+    </div>
+
+    <nav id="tabs" class="tabs" role="tablist" aria-label="Вопросы"></nav>
+
+    <div class="top-actions">
+      <button id="open-history" class="btn glass">История тестов</button>
+      <button id="toggle-tabs" class="btn glass mobile-only">Меню</button>
+    </div>
+  </header>
+
+  <main class="main-grid">
+    <section class="content-panel glass" id="content-panel" tabindex="0">
+      <div id="content-inner" class="content-inner">
+        <h2 id="q-title">Выберите вкладку сверху</h2>
+        <article id="theory" class="theory"></article>
+
+        <section id="quiz" class="quiz">
+          <h3>Тест</h3>
+          <div id="quiz-questions" class="quiz-questions"></div>
+          <div class="quiz-actions">
+            <button id="submit-quiz" class="btn primary">Проверить</button>
+            <button id="reset-quiz" class="btn">Сбросить</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <aside class="sidebar glass" id="sidebar">
+      <h3>Содержание</h3>
+      <ul id="toc" class="toc"></ul>
+    </aside>
+  </main>
+
+  <div id="history-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel glass">
+      <header class="modal-header">
+        <h3>История тестов</h3>
+        <div class="modal-controls">
+          <button id="close-history" class="btn">Закрыть</button>
+        </div>
+      </header>
+      <section id="history-list" class="history-list"></section>
+      <footer class="modal-footer">
+        <button id="clear-history" class="btn danger">Очистить историю</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
